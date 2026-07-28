@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nom">
+    <button onclick="ajouter()">Valider</button>
+    <div id="ste"></div>
+</body>
+<script>
+    function ajouter(){
+        var ha=document.getElementById("ste");
+        ha.textContent="Bonjour"+" "+document.getElementById("nom").value;
+    }
+</script>
+
+</html>
