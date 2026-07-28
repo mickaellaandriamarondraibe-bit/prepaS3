@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="nom">
+    <input type="number" class="salaire">
+    <button onclick="ajout()">Ajouter</button>
+    
+    <table id="table">
+        <tr>
+            <th >Nom</th>
+            <th >Salaire</th>
+            <th >Action</th>
+        </tr>
+        <tr id ="lignetotal">
+            <td>Total salaire</td>
+            <td id="total">0</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+</body>
+<script>
+    let totalsalaire=0;
+    function ajout(){
+        let nom= document.querySelector(".nom");
+        let salaire=document.querySelector(".salaire");
+
+        let anarana=nom.value;
+        let karama = Number(salaire.value);
+
+        let tableau= document.getElementById("table");
+        tableau.style.borderCollapse="collapse";
+        let lignetotal=document.getElementById("lignetotal");
+
+        let ligne= document.createElement("tr");
+        
+
+        let colonne1=document.createElement("td");
+        colonne1.textContent=anarana;
+        ligne.appendChild(colonne1);
+        colonne1.style.border="1px solid";
+
+        let colonne2=document.createElement("td");
+        colonne2.textContent=karama;
+        ligne.appendChild(colonne2);
+        colonne2.style.border="1px solid";
+
+        let colonne3=document.createElement("td");
+        let boutonsupprimer=document.createElement("button");
+        boutonsupprimer.textContent="supprimer";
+
+        boutonsupprimer.onclick = function(){
+            ligne.remove();
+
+            totalsalaire=totalsalaire - karama;
+
+            document.getElementById("total").textContent=  totalsalaire;
+        };
+        colonne3.appendChild(boutonsupprimer);
+        ligne.appendChild(colonne3);
+        colonne3.style.border="1px solid";
+
+        lignetotal.parentNode.insertBefore(ligne, lignetotal);
+
+        totalsalaire=totalsalaire+karama;
+        document.getElementById("total").textContent= totalsalaire;
+
+    }
+</script>
+</html>
