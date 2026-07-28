@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="number" id="nombre">
+  
+   <button onclick="multiplication()">Validers</button>
+   <div id="conteneur"></div>
+</body>
+<script>
+    function multiplication(){
+        
+        let tableau = document.createElement("table");
+        
+            tableau.style.borderCollapse="Collapse";
+        for(let i=1;i<11;i++){
+            
+            let ligne1=document.createElement("tr");
+            let entreligne1=document.createElement("td");
+                entreligne1.textContent= i + "*" + document.getElementById("nombre").value;
+            let entreligne2=document.createElement("td");
+                entreligne2.textContent="=";
+            let entreligne3=document.createElement("td");
+            let somme = i*(document.getElementById("nombre").value);
+                entreligne3.textContent=somme; 
+                
+                ligne1.appendChild(entreligne1);
+                
+                ligne1.appendChild(entreligne2);
+                ligne1.appendChild(entreligne3);
+
+                tableau.appendChild(ligne1);
+         }
+         
+          document.getElementById("conteneur").appendChild(tableau);
+    }
+</script>
+</html>
