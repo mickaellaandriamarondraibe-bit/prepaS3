@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="nom"> ajouter</button>
+    <button id="prenom">ajouter</button>
+
+    <div id ="conteneur"></div>
+
+    <div id="contenu"></div>
+</body>
+<script>
+    document.getElementById("nom").value;
+    document.getElementById("prenom").value;
+
+    let titre=document.createElement("h1");
+    titre.textContent="Bonjour Stephanie";
+    document.getElementById("conteneur").appendChild(titre);
+
+    let tableau = document.createElement("table");
+    let ligne1 = document.createElement("tr");
+    
+    let nom = document.createElement("th");
+    nom.textContent="Nom";
+    nom.style.border="1px solid";
+
+    let age =document.createElement("th");
+    age.textContent="Age";
+     age.style.border="1px solid";
+
+    ligne1.appendChild(nom);
+    ligne1.appendChild(age);
+
+    tableau.appendChild(ligne1);
+
+    let ligne2=document.createElement("tr");
+
+
+    let n=document.createElement("td");
+    n.textContent="Stephanie";
+    n.style.border="1px solid";
+    n.style.borderColor="blue";
+
+    let a=document.createElement("td");
+    a.textContent="25";
+    a.style.border="1px solid";
+    
+    ligne2.appendChild(n);
+    ligne2.appendChild(a);
+
+    tableau.appendChild(ligne2);
+    tableau.style.borderCollapse ="Collapse";
+    
+
+    document.getElementById("contenu").appendChild(tableau);
+
+
+
+</script>
+</html>
