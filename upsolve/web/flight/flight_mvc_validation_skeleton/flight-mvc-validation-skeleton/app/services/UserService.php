@@ -11,51 +11,38 @@ class UserService
 
     public function validateOnly(array $data)
     {
-        $values = $this->cleanValues($data);
-
         return [
-            'values' => $values,
+            'values' => $data,
             'errors' => Validator::register($data)
         ];
     }
 
     public function register(array $data)
     {
-        $values = $this->cleanValues($data);
         $errors = Validator::register($data);
 
         if (!empty($errors)) {
             return [
-                'values' => $values,
+                'values' => $data,
                 'errors' => $errors,
                 'success' => false
             ];
         }
 
-        if ($this->repository->emailExists($values['email'])) {
+        if ($this->repository->emailExists($data['email'])) {
             return [
-                'values' => $values,
+                'values' => $data,
                 'errors' => ['email' => 'Cet email existe deja.'],
                 'success' => false
             ];
         }
 
-        $this->repository->create($values, $data['password']);
+        $this->repository->create($data);
 
         return [
             'values' => [],
             'errors' => [],
             'success' => true
-        ];
-    }
-
-    private function cleanValues(array $data)
-    {
-        return [
-            'nom' => trim($data['nom'] ?? ''),
-            'prenom' => trim($data['prenom'] ?? ''),
-            'email' => trim($data['email'] ?? ''),
-            'telephone' => trim($data['telephone'] ?? '')
         ];
     }
 }

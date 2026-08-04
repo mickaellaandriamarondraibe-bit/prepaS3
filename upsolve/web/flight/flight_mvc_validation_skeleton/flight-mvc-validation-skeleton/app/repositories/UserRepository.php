@@ -18,7 +18,7 @@ class UserRepository
         return $stmt->fetch() !== false;
     }
 
-    public function create(array $user, $password)
+    public function create(array $user)
     {
         $sql = 'INSERT INTO users (nom, prenom, email, password_hash, telephone)
                 VALUES (?, ?, ?, ?, ?)';
@@ -28,7 +28,7 @@ class UserRepository
             $user['nom'],
             $user['prenom'],
             $user['email'],
-            password_hash($password, PASSWORD_DEFAULT),
+            password_hash($user['password'], PASSWORD_DEFAULT),
             $user['telephone']
         ]);
     }
