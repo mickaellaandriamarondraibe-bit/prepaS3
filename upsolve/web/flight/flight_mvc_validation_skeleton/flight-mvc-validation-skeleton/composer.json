@@ -1,6 +1,6 @@
 {
   "require": {
-    "flight/flight": "^2.0"
+    "flightphp/core": "^3.0"
   },
   "autoload": {
     "classmap": [

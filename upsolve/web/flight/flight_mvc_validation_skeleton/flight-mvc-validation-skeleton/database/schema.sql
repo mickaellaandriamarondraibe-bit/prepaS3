@@ -10,3 +10,11 @@ CREATE TABLE IF NOT EXISTS users (
   telephone VARCHAR(20) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+create table products(
+  id int AUTO_INCREMENT primary key,
+  nom varchar(100) 
+);
+insert into products(nom) values 
+('vilany'),
+('vera')
+;
