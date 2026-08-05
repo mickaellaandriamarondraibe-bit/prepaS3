@@ -1,5 +1,5 @@
 <?php
-function e($v){ return htmlspecialchars($v ?? '', ENT_QUOTES, 'UTF-8'); }
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,8 +27,8 @@ function e($v){ return htmlspecialchars($v ?? '', ENT_QUOTES, 'UTF-8'); }
                 <tbody>
                     <?php foreach ($products as $product): ?>
                         <tr>
-                            <td><?= e($product['id']) ?></td>
-                            <td><?= e($product['nom']) ?></td>
+                            <td><?= $product['id'] ?></td>
+                            <td><?= $product['nom'] ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
