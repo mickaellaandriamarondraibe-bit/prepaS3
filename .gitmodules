@@ -1,0 +1,3 @@
+[submodule "upsolve/web/regimeAlimentaires"]
+	path = upsolve/web/regimeAlimentaires
+	url = git@github.com:mickaellaandriamarondraibe-bit/regimeAlimentaires.git
