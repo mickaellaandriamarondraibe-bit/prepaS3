@@ -1,0 +1,461 @@
+CRITICAL - 2026-08-11 08:01:57 --> ErrorException: Undefined property: App\Controllers\UserController::$usermod
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 15.
+ 1 APPPATH/Controllers/UserController.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:03:48 --> ErrorException: Undefined variable $usermod
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 15.
+ 1 APPPATH/Controllers/UserController.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:03:49 --> ErrorException: Undefined variable $usermod
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 15.
+ 1 APPPATH/Controllers/UserController.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:03:50 --> ErrorException: Undefined variable $usermod
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 15.
+ 1 APPPATH/Controllers/UserController.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+ERROR - 2026-08-11 08:06:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-08-11 08:06:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+ERROR - 2026-08-11 08:06:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-08-11 08:06:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+ERROR - 2026-08-11 08:06:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-08-11 08:06:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: user]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/UserModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/UserController.php(15): App\Models\UserModel->getAllUser()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:07:01 --> ErrorException: Array to string conversion
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 17.
+ 1 APPPATH/Controllers/UserController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:07:04 --> ErrorException: Array to string conversion
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 17.
+ 1 APPPATH/Controllers/UserController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:08:24 --> ErrorException: Array to string conversion
+[Method: GET, Route: user]
+in APPPATH/Controllers/UserController.php on line 17.
+ 1 APPPATH/Controllers/UserController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:18:21 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:21:37 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 4.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:21:38 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 4.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:23:36 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:24:32 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:25:07 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:27:06 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:27:07 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 08:27:53 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: id]
+in APPPATH/Views/pageuser.php on line 3.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/UserController.php(22): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 11:17:26 --> ErrorException: Undefined variable $id
+[Method: GET, Route: user/1]
+in APPPATH/Controllers/UserController.php on line 21.
+ 1 APPPATH/Controllers/UserController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 11:17:27 --> ErrorException: Undefined variable $id
+[Method: GET, Route: user/1]
+in APPPATH/Controllers/UserController.php on line 21.
+ 1 APPPATH/Controllers/UserController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 11:18:05 --> ErrorException: Undefined variable $id
+[Method: GET, Route: user/1]
+in APPPATH/Models/UserModel.php on line 22.
+ 1 APPPATH/Models/UserModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(21): App\Models\UserModel->getid()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+CRITICAL - 2026-08-11 11:18:06 --> ErrorException: Undefined variable $id
+[Method: GET, Route: user/1]
+in APPPATH/Models/UserModel.php on line 22.
+ 1 APPPATH/Models/UserModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(21): App\Models\UserModel->getid()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
+ERROR - 2026-08-11 11:18:37 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(22): CodeIgniter\BaseModel->first()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(21): App\Models\UserModel->getid()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Models/UserModel.php(22): CodeIgniter\BaseModel->first()
+#6 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/app/Controllers/UserController.php(21): App\Models\UserModel->getid()
+#7 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+#8 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-08-11 11:18:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: GET, Route: user/1]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/UserModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/UserController.php(21): App\Models\UserModel->getid()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UserController->getIdUser()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/stephanie/prepaS3/upsolve/web/InitCodeIgniter/public/index.php')
