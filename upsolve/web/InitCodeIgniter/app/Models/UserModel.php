@@ -22,6 +22,11 @@ public function getid($id)
     return $this-> where( 'id', $id) -> first();
    
 }
+public function getUserByUsernameAndEmail($username, $email)
+{
+    return $this->where('username', $username)
+                ->where('email', $email)
+                ->first();
 }
-
+}
 ?>

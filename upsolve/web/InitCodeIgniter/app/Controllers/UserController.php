@@ -23,6 +23,26 @@ class UserController extends BaseController{
          ['table' => [$liste] ]
         );
     }
+    public function login()
+{
+    $username = $this->request->getPost('username');
+    $email = $this->request->getPost('email');
+
+    $user = $this->usermod->getUserByUsernameAndEmail($username, $email);
+
+    if ($user) {
+        session()->set([
+            'id' => $user['id'],
+            'username' => $user['username'],
+            'email' => $user['email'],
+            'connecte' => true
+        ]);
+
+        return redirect()->to('/ListeLivre');
+    }
+
+    return redirect()->to('/')->with('error', 'Nom ou email incorrect');
+}
 }
 
 

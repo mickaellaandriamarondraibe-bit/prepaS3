@@ -1,0 +1,112 @@
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(120deg, rgba(12, 35, 64, 0.88), rgba(11, 86, 92, 0.78)),
+        url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    color: #172033;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.app-shell {
+    min-height: 100vh;
+    padding: 32px 16px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    box-shadow: 0 24px 70px rgba(4, 18, 38, 0.25);
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b5c68;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.section-title {
+    color: #0f2537;
+    font-weight: 800;
+}
+
+.muted-text {
+    color: #637184;
+}
+
+.form-control {
+    border-radius: 8px;
+    border-color: #d7dee8;
+    padding: 12px 14px;
+}
+
+.form-control:focus {
+    border-color: #0b5c68;
+    box-shadow: 0 0 0 0.2rem rgba(11, 92, 104, 0.18);
+}
+
+.btn-primary {
+    background: #0b5c68;
+    border-color: #0b5c68;
+}
+
+.btn-primary:hover {
+    background: #084a55;
+    border-color: #084a55;
+}
+
+.btn-outline-primary {
+    color: #0b5c68;
+    border-color: #0b5c68;
+}
+
+.btn-outline-primary:hover {
+    background: #0b5c68;
+    border-color: #0b5c68;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #f3f7fb;
+    color: #516073;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #dfe6ef;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.page-header {
+    border-bottom: 1px solid #e5ebf2;
+}
+
+.login-card {
+    max-width: 460px;
+    width: 100%;
+}
+
+.content-card {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.form-card {
+    max-width: 620px;
+    width: 100%;
+}
