@@ -3,6 +3,7 @@ package dao;
 import model.Article;
 import model.MouvementStock;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

@@ -52,7 +52,7 @@ public class MouvementStock {
         mouvement.setArticle(article);
         mouvement.setQuantite(quantiteSortie);
         mouvement.setQuantiteRestante(0);
-        mouvement.setPrixUnitaire(prixVenteUnitaire);
+        mouvement.setPrixUnitaire(prixVenteUnitaire.multiply(BigDecimal.valueOf(2)));
         mouvement.setDateMouvement(dateSortie);
         return mouvement;
     }
